@@ -1,0 +1,23 @@
+{
+    "author": "rjs",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "description": "This extension will add 'Goto URL' to context menu.",
+    "icons": {
+        "48": "icons/48.png",
+        "96": "icons/96.png"
+    },
+    "manifest_version": 2,
+    "name": "Goto URL",
+    "permissions": [
+        "activeTab",
+        "contextMenus"
+    ],
+    "version": "0.1",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
+}
